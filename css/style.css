@@ -1502,10 +1502,10 @@ footer{
     .prepaidDetails > div {
         width: calc(50% - 10px);
     }
-    .grid {
-   
+    .grid {   
         flex-wrap:nowrap;
-   
+	overflow-x: auto;
+        scrollbar-width: none;   
     }
     .card{   
         flex: 0 0 calc(80% - 10px);
