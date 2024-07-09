@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Site de jeux vidéos" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style_glitch.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"
+      defer
+    ></script>
+    <script src="./js/app.js" defer></script>
+    <title>Speed Gaming</title>
+  </head>
+
+  <body>
+    <div class="opacityDiv"></div>
+
+    <div class="container">
+      <div class="hightContainer">
+        <div class="headerContainer">
+          <header class="header">
+            <a href="index.html">
+              <div class="divLogo">
+                <span>Speed</span><br />
+                <span>gaming</span>
+              </div>
+            </a>
+            <div class="contentSecondaryInput">
+              <input class="search2" />
+              <div class="deleteSearch2">
+                <i class="fa-solid fa-delete-left"></i>
+              </div>
+
+              <div class="croixSearch2">
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+            </div>
+            <nav class="menu">
+              <div class="topMenu">
+                <a class="" href="#">Tendances</a>
+                <a class="" href="#">Précommandes</a>
+                <a class="" href="#">Prochaines sorties</a>
+                <a class="" href="#">Support 24/7</a>
+              </div>
+              <div class="bottomMenu">
+                <div class="glossy"></div>
+                <div class="links beforeLinks">
+                  <div class="contentPC">
+                    <span class="linkPC">PC</span>
+                    <div class="sousMenu">
+                      <div class="contentSousMenu">
+                        <div class="gloss"></div>
+                        <div class="platformeTitle">
+                          <span>Plateformes PC</span><span>Tout voir</span>
+                        </div>
+                        <div class="plateformeDetails">
+                          <div>
+                            <div>
+                              <img
+                                src="./image/logos/menu/plateform/icon-stm.svg"
+                                alt="logo steam"
+                              />
+                            </div>
+                            <span>Steam</span>
+                          </div>
+                          <div>
+                            <div>
+                              <img
+                                src="./image/logos/menu/plateform/icon-uplay.svg"
+                                alt="logo steam"
+                              />
+                            </div>
+                            <span>Ubisoft Connect</span>
+                          </div>
+                          <div>
+                            <div>
+                              <img
+                                src="./image/logos/menu/plateform/icon-origin.svg"
+                                alt="logo steam"
+                              />
+                            </div>
+                            <span>Origin</span>
+                          </div>
+                          <div>
+                            <div>
+                              <img
+                                src="./image/logos/menu/plateform/icon-battle-net.svg"
+                                alt="logo steam"
+                              />
+                            </div>
+                            <span>Battle.net</span>
+                          </div>
+                          <div>
+                            <div>
+                              <img
+                                src="./image/logos/menu/plateform/icon-rock.svg"
+                                alt="logo steam"
+                              />
+                            </div>
+                            <span>Rockstar</span>
+                          </div>
+                          <div>
+                            <div>
+                              <img
+                                src="./image/logos/menu/plateform/icon-gog-com.svg"
+                                alt="logo steam"
+                              />
+                            </div>
+                            <span>GOG.com</span>
+                          </div>
+                          <div>
+                            <div>
+                              <img
+                                src="./image/logos/menu/plateform/icon-ms-store.svg"
+                                alt="logo steam"
+                              />
+                            </div>
+                            <span>Microsoft Store</span>
+                          </div>
+                          <div>
+                            <div>
+                              <img
+                                src="./image/logos/menu/plateform/icon-epic.svg"
+                                alt="logo steam"
+                              />
+                            </div>
+                            <span>Epic</span>
+                          </div>
+                        </div>
+                        <div class="prepaidTitle">
+                          <span>Cartes prépayées</span>
+                          <span>Tout voir</span>
+                        </div>
+                        <div class="prepaidDetails">
+                          <div>
+                            <div>
+                              <img
+                                src="./image/logos/menu/plateform/icon-stm.svg"
+                                alt="carte cadeau Steam"
+                              />
+                            </div>
+                            <span>Cartes cadeaux Steam</span>
+                          </div>
+                          <div>
+                            <div>
+                              <img
+                                src="./image/logos/menu/prepaid/gift-solid.svg"
+                                alt="carte cadeau Steam"
+                              />
+                            </div>
+                            <span>Cartes cadeaux Speed Gaming</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="contentPS">
+                    <span class="linkPS">PlayStation</span>
+                    <div class="sousMenu">
+                      <div class="contentSousMenu">
+                        <div class="gloss"></div>
+                        <div class="platformeTitle">
+                          <span>Consoles</span><span>Tout voir</span>
+                        </div>
+                        <div class="plateformeDetails">
+                          <div>
+                            <div>
+                              <img
+                                src="./image/logos/menu/playstation.svg"
+                                alt="logo steam"
+                              />
+                            </div>
+                            <span>Playstation 4</span>
+                          </div>
+                          <div>
+                            <div>
+                              <img
+                                src="./image/logos/menu/playstation.svg"
+                                alt="logo steam"
+                              />
+                            </div>
+                            <span>Playstation 5</span>
+                          </div>
+                        </div>
+                        <div class="prepaidTitle">
+                          <span>Cartes prépayées</span>
+                          <span>Tout voir</span>
+                        </div>
+                        <div class="prepaidDetails">
+                          <div>
+                            <div>
+                              <img
+                                src="./image/logos/menu/playstation.svg"
+                                alt="carte cadeau PlayStation"
+                              />
+                            </div>
+                            <span>PlayStation Store</span>
+                          </div>
+                          <div>
+                            <div>
+                              <img
+                                src="./image/logos/menu/playstation.svg"
+                                alt="carte cadeau PlayStation"
+                              />
+                            </div>
+                            <span>PlayStation PLUS</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="contentXbox">
+                    <span class="linkXbox">Xbox</span>
+                    <div class="sousMenu">
+                      <div class="contentSousMenu">
+                        <div class="gloss"></div>
+                        <div class="platformeTitle">
+                          <span>Consoles</span><span>Tout voir</span>
+                        </div>
+                        <div class="plateformeDetails">
+                          <div>
+                            <div>
+                              <img
+                                src="./image/logos/menu/xbox.svg"
+                                alt="logo Xbox"
+                              />
+                            </div>
+                            <span>Xbox ONE</span>
+                          </div>
+                          <div>
+                            <div>
+                              <img
+                                src="./image/logos/menu/xbox.svg"
+                                alt="logo Xbox"
+                              />
+                            </div>
+                            <span>Xbox Series XIS</span>
+                          </div>
+                        </div>
+                        <div class="prepaidTitle">
+                          <span>Cartes prépayées</span>
+                          <span>Tout voir</span>
+                        </div>
+                        <div class="prepaidDetails">
+                          <div>
+                            <div>
+                              <img
+                                src="./image/logos/menu/xbox.svg"
+                                alt="logo Xbox"
+                              />
+                            </div>
+                            <span>Xbox Live Gold</span>
+                          </div>
+                          <div>
+                            <div>
+                              <img
+                                src="./image/logos/menu/xbox.svg"
+                                alt="logo Xbox"
+                              />
+                            </div>
+                            <span>Xbox Game Pass</span>
+                          </div>
+                          <div>
+                            <div>
+                              <img
+                                src="./image/logos/gift-solid-white.svg"
+                                alt="logo xbox"
+                              />
+                            </div>
+                            <span>Xbox Gift Card</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="contentNintendo">
+                    <span class="linkNintendo">Nintendo</span>
+                    <div class="sousMenu">
+                      <div class="contentSousMenu">
+                        <div class="gloss"></div>
+                        <div class="platformeTitle">
+                          <span>Consoles</span><span>Tout voir</span>
+                        </div>
+                        <div class="plateformeDetails">
+                          <div>
+                            <div>
+                              <img
+                                src="./image/logos/menu/nintendo.svg"
+                                alt="logo Nintendo"
+                              />
+                            </div>
+                            <span>Nintendo Switch</span>
+                          </div>
+                        </div>
+                        <div class="prepaidTitle">
+                          <span>Cartes prépayées</span>
+                          <span>Tout voir</span>
+                        </div>
+                        <div class="prepaidDetails">
+                          <div>
+                            <div>
+                              <img
+                                src="./image/logos/menu/nintendo.svg"
+                                alt="logo Nintendo"
+                              />
+                            </div>
+                            <span>Nintendo eShop Cards</span>
+                          </div>
+                          <div>
+                            <div>
+                              <img
+                                src="./image/logos/menu/nintendo.svg"
+                                alt="logo Nintendo"
+                              />
+                            </div>
+                            <span>Nintendo Online Memberships</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- searchColor -->
+                <input class="search" />
+                <div class="deleteSearch">
+                  <i class="fa-solid fa-delete-left"></i>
+                </div>
+
+                <div class="croixSearch">
+                  <i class="fa-solid fa-xmark"></i>
+                </div>
+              </div>
+            </nav>
+            <!-- <div class="sousmenuConteneur"></div> -->
+            <div class="headerRight">
+              <a href="#" class="linkCard"
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></a>
+              <a href="#" class="linkUser"
+                ><i class="fa-solid fa-circle-user"></i
+              ></a>
+            </div>
+          </header>
+          <div class="banner">
+            <img src="./image/banner.jpg" alt="photo du jeu Dead Island 2" />
+          </div>
+          <div class="bannerTitle">
+            <div class="bannerTextTop">
+              <span>Dead Island 2</span>
+            </div>
+            <div class="bannerTextBottom">
+              <div class="promo">
+                <div class="glitch-wrapper">
+                  <div class="glitch" data-glitch="-21%">-21%</div>
+                </div>
+              </div>
+              <span class="bannerPrice">55.49€</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="centerContainer">
+      <section>
+        <div class="sectionTitles">
+          <p>Tendances</p>
+          <button class="btnSectionTitles">Tout voir</button>
+        </div>
+        <div class="grid">
+          <!-- .card{$}*9 -->
+          <div class="card">
+            <div class="mediaCard">
+              <img
+                src="./thumbnails/deadIsland/img_deadIsland.jpg"
+                alt="logo jeu deadisland"
+              />
+              <video
+                preload="none"
+                loop=""
+                muted
+                playsinline=""
+                src="./thumbnails/deadIsland/vid_deadIsland.webm"
+              ></video>
+              <div class="promoGrid">
+                <div class="glitch-wrapper">
+                  <div class="glitch" data-glitch="-21%">-21%</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="information">
+              <div class="text">
+                <span class="title"
+                  >Dead Island 2 (Xbox ONE / Xbox Series X|S)</span
+                >
+              </div>
+              <div class="price">55.49€</div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="mediaCard">
+              <img
+                src="./thumbnails/hogwart/img_hogwart.jpg"
+                alt="image jeu Hogwarts"
+              />
+              <video
+                preload="none"
+                loop=""
+                muted
+                playsinline=""
+                src="./thumbnails/hogwart/vid_hogwart.webm"
+              ></video>
+              <div class="promoGrid">
+                <div class="glitch-wrapper">
+                  <div class="glitch" data-glitch="-15%">-15%</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="information">
+              <div class="text">
+                <span class="title"
+                  >Hogwarts Legacy : L'Héritage de Poudlard Deluxe Edition</span
+                >
+              </div>
+              <div class="price">48.49€</div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="mediaCard">
+              <img
+                src="./thumbnails/assetto/img_assetto.jpg"
+                alt="image jeu Assetto"
+              />
+              <video
+                preload="none"
+                loop=""
+                muted
+                playsinline=""
+                src="./thumbnails/assetto/vid_assetto.webm"
+              ></video>
+              <div class="promoGrid">
+                <div class="glitch-wrapper">
+                  <div class="glitch" data-glitch="-18%">-18%</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="information">
+              <div class="text">
+                <span class="dlc">DLC</span>
+                <span class="title"
+                  >Assetto Corsa Competizione - 2023 GT World Challenge
+                  Pack</span
+                >
+              </div>
+              <div class="price">9.99€</div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="mediaCard">
+              <img
+                src="./thumbnails/theLastOfUs/img_theLastOfUs.jpg"
+                alt="image jeu the last of US"
+              />
+              <video
+                preload="none"
+                loop=""
+                muted
+                playsinline=""
+                src="./thumbnails/theLastOfUs/vid_theLastOfUs.webm"
+              ></video>
+              <div class="promoGrid">
+                <div class="glitch-wrapper">
+                  <div class="glitch" data-glitch="-25%">-25%</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="information">
+              <div class="text">
+                <span class="title">The Last of Us Part I</span>
+              </div>
+              <div class="price">36.45€</div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="mediaCard">
+              <img
+                src="./thumbnails/dredge/img_dredge.jpg"
+                alt="image jeu Dredge"
+              />
+              <video
+                preload="none"
+                loop=""
+                muted
+                playsinline=""
+                src="./thumbnails/dredge/vid_dredge.webm"
+              ></video>
+              <div class="promoGrid">
+                <div class="glitch-wrapper">
+                  <div class="glitch" data-glitch="-35%">-35%</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="information">
+              <div class="text">
+                <span class="title">Dredge</span>
+              </div>
+              <div class="price">19.09€</div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="mediaCard">
+              <img
+                src="./thumbnails/residentEvil/img_residentEvil.jpg"
+                alt="image jeu resident evil"
+              />
+              <video
+                preload="none"
+                loop=""
+                muted
+                playsinline=""
+                src="./thumbnails/residentEvil/vid_residentEvil.webm"
+              ></video>
+              <div class="promoGrid">
+                <div class="glitch-wrapper">
+                  <div class="glitch" data-glitch="-22%">-22%</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="information">
+              <div class="text">
+                <span class="title">Resident Evil 4 Deluxe Edition</span>
+              </div>
+              <div class="price">47.89€</div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="mediaCard">
+              <img
+                src="./thumbnails/minecraft/img_minecraft.jpg"
+                alt="image jeu Minecraft"
+              />
+              <video
+                preload="none"
+                loop=""
+                muted
+                playsinline=""
+                src="./thumbnails/minecraft/vid_minecraft.webm"
+              ></video>
+              <div class="promoGrid">
+                <div class="glitch-wrapper">
+                  <div class="glitch" data-glitch="-32%">-32%</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="information">
+              <div class="text">
+                <span class="title">Minecraft Legends</span>
+              </div>
+              <div class="price">27.99€</div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="mediaCard">
+              <img
+                src="./thumbnails/ravenswatch/img_ravenswatch.jpg"
+                alt="image jeu Ravenswatch"
+              />
+              <video
+                preload="none"
+                loop=""
+                muted
+                playsinline=""
+                src="./thumbnails/ravenswatch/vid_ravenswatch.webm"
+              ></video>
+              <div class="promoGrid">
+                <div class="glitch-wrapper">
+                  <div class="glitch" data-glitch="-25%">-25%</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="information">
+              <div class="text">
+                <span class="title">Ravenswatch</span>
+              </div>
+              <div class="price">13.89€</div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="mediaCard">
+              <img
+                src="./thumbnails/sims/img_sims.jpg"
+                alt="image jeu The sims"
+              />
+              <video
+                preload="none"
+                loop=""
+                muted
+                playsinline=""
+                src="./thumbnails/sims/vid_sims.webm"
+              ></video>
+              <div class="promoGrid">
+                <div class="glitch-wrapper">
+                  <div class="glitch" data-glitch="-14%">-14%</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="information">
+              <div class="text">
+                <span class="dlc">DLC</span>
+                <span class="title">Les Sims 4 Grandir ensemble</span>
+              </div>
+              <div class="price">29.99€</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="containerSeparator">
+      <div class="separatorLeft">
+        <div class="icon">
+          <i class="fa-regular fa-circle-check"></i>
+        </div>
+        <div class="text">
+          <p>Fiable et sûr</p>
+          <p>Plus de 10,000 jeux</p>
+        </div>
+      </div>
+      <div class="spacer"></div>
+      <div class="separatorCenter">
+        <div class="icon">
+          <i class="fa-regular fa-comments"></i>
+        </div>
+        <div class="text">
+          <p>Service client</p>
+          <p>Conseillers disponibles 24/7</p>
+        </div>
+      </div>
+      <div class="spacer"></div>
+      <div class="separatorRight">
+        <div class="separatorRightTop">
+          <div class="star"></div>
+          <div class="titleStar">
+            <span>Reviews</span>
+          </div>
+          <div>
+            <div><span></span></div>
+            <div><span></span></div>
+            <div><span></span></div>
+            <div><span></span></div>
+            <div><span></span></div>
+          </div>
+        </div>
+        <div class="separatorRightBottom">
+          <div><p>Noté 4.8 sur 5, basé sur 585,689 avis</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="containerBottom">
+      <div class="grid2">
+        <div class="card2">
+          <div class="divName">Action</div>
+          <div class="divCover">
+            <img
+              class="img1"
+              src="./image/categorys/action/action1.jpg"
+              alt="image logo action"
+            />
+            <img
+              class="img2"
+              src="./image/categorys/action/action2.webp"
+              alt="image logo action"
+            />
+          </div>
+        </div>
+
+        <div class="card2">
+          <div class="divName">Arcade</div>
+          <div class="divCover">
+            <img
+              class="img1"
+              src="./image/categorys/arcade/arcade1.jpg"
+              alt="image logo arcade"
+            />
+            <img
+              class="img2"
+              src="./image/categorys/arcade/arcade2.webp"
+              alt="image logo arcade"
+            />
+          </div>
+        </div>
+        <div class="card2">
+          <div class="divName">Aventure</div>
+          <div class="divCover">
+            <img
+              class="img1"
+              src="./image/categorys/aventure/aventure1.jpg"
+              alt="image logo aventure"
+            />
+            <img
+              class="img2"
+              src="./image/categorys/aventure/aventure2.webp"
+              alt="image logo aventure"
+            />
+          </div>
+        </div>
+        <div class="card2">
+          <div class="divName">Combat</div>
+          <div class="divCover">
+            <img
+              class="img1"
+              src="./image/categorys/combat/category-background7.jpg"
+              alt="image logo combat"
+            />
+            <img
+              class="img2"
+              src="./image/categorys/combat/category-icon7.webp"
+              alt="image logo combat"
+            />
+          </div>
+        </div>
+        <div class="card2">
+          <div class="divName">FPS</div>
+          <div class="divCover">
+            <img
+              class="img1"
+              src="./image/categorys/FPS/category-background9.jpg"
+              alt="image logo fps"
+            />
+            <img
+              class="img2 imgFPS"
+              src="./image/categorys/FPS/category-icon9.png"
+              alt="image logo fps"
+            />
+          </div>
+        </div>
+        <div class="card2">
+          <div class="divName">Jeux solo</div>
+          <div class="divCover">
+            <img
+              class="img1"
+              src="./image/categorys/jeux_solo/category-background47.jpg"
+              alt="image logo jeu solo"
+            />
+            <img
+              class="img2"
+              src="./image/categorys/jeux_solo/category-icon47.png"
+              alt="image logo jeu solo"
+            />
+          </div>
+        </div>
+        <div class="card2">
+          <div class="divName">RPG</div>
+          <div class="divCover">
+            <img
+              class="img1"
+              src="./image/categorys/RPG/category-background11.jpg"
+              alt="image logo RPG"
+            />
+            <img
+              class="img2"
+              src="./image/categorys/RPG/category-icon11.webp"
+              alt="image logo RPG"
+            />
+          </div>
+        </div>
+        <div class="card2">
+          <div class="divName">Stratégie</div>
+          <div class="divCover">
+            <img
+              class="img1"
+              src="./image/categorys/strategie/category-background17.jpg"
+              alt="image logo Strategie"
+            />
+            <img
+              class="img2"
+              src="./image/categorys/strategie/category-icon17.webp"
+              alt="image logo Strategie"
+            />
+          </div>
+        </div>
+        <div class="card2">
+          <div class="divName">VR</div>
+          <div class="divCover">
+            <img
+              class="img1"
+              src="./image/categorys/VR/category-background31.jpg"
+              alt="image logo réalité virtuel"
+            />
+            <img
+              class="img2"
+              src="./image/categorys/VR/category-icon31.webp"
+              alt="image logo réalité virtuel"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="banner2">
+      <div class="coverBanner">
+        <img src="./image/banner2.jpg" alt="Image Star Wars" />
+      </div>
+      <div class="bannerTitle">
+        <div class="bannerTextTop">
+          <span>Star Wars Jedi: Survivor</span>
+        </div>
+        <div class="bannerTextBottom">
+          <div class="promo">
+            <div class="glitch-wrapper">
+              <div class="glitch" data-glitch="-30%">-30%</div>
+            </div>
+          </div>
+          <span class="bannerPrice">48.79€</span>
+        </div>
+      </div>
+    </div>
+    <div class="aboveFooter">
+      <div class="paperPlane">
+        <i class="fa-regular fa-paper-plane"></i>
+      </div>
+      <div class="textRegisterFooter">
+        <p>Ne ratez plus aucune offre et promo !</p>
+        <p>
+          Et soyez le premier à recevoir nos offres privées, newsletters et
+          promos de la semaine
+        </p>
+      </div>
+      <button class="btnRegisterFooter">Inscrivez-vous !</button>
+    </div>
+    <footer>
+      <div class="contentFooter">
+        <div class="footerTop">
+          <div class="footerTopL">
+            <div class="divLogo">
+              <span>Speed</span><br />
+              <span>gaming</span>
+            </div>
+            <div class="footerReview">
+              <div>
+                <div class="star"></div>
+                <div class="titleStar">
+                  <span>Reviews</span>
+                </div>
+              </div>
+              <div class="stars">
+                <div><span></span></div>
+                <div><span></span></div>
+                <div><span></span></div>
+                <div><span></span></div>
+                <div><span></span></div>
+              </div>
+            </div>
+          </div>
+          <div class="footerTopC">
+            <ul>
+              <li>Les conditions de ventes</li>
+              <li>Politique de confidentialité</li>
+              <li>Nous contacter</li>
+              <li>FAQ</li>
+              <li class="gift">
+                <i class="fa-solid fa-gift"></i
+                ><span>Utiliser une carte cadeau</span>
+              </li>
+            </ul>
+          </div>
+          <div class="footerLogos">
+            <div class="socialLogos">
+              <div class="twitter">
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+              <div class="instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+              <div class="facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+              </div>
+              <div class="youtube">
+                <i class="fa-brands fa-youtube"></i>
+              </div>
+              <div class="twitch">
+                <i class="fa-brands fa-twitch"></i>
+              </div>
+            </div>
+            <div class="appLogos">
+              <img src="./image/logos/apple.svg" alt="Logo d'apple" />
+
+              <img src="./image/logos/android.svg" alt="Logo de Google Play" />
+            </div>
+          </div>
+        </div>
+        <div class="footerBottom">
+          <div>Copyright © 2023 Speed Gaming - All rights reserved</div>
+          <div class="footerBottomR">
+            <span>Français</span>
+            <div></div>
+            <span>EUR</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
